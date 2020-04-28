@@ -1,0 +1,19 @@
+/*@font-face {*/
+/*    font-family: Oswald;*/
+/*    src: url(./fonts/Oswald/static/Oswald-Regular.ttf);*/
+/*}*/
+
+/*@font-face {*/
+/*    font-family: OswaldLight;*/
+/*    src: url(./fonts/Oswald/static/Oswald-Light.ttf);*/
+/*}*/
+
+/*@font-face {*/
+/*    font-family: OswaldSemiBold;*/
+/*    src: url(./fonts/Oswald/static/Oswald-SemiBold.ttf);*/
+/*}*/
+
+
+body {
+    box-sizing: border-box;
+}

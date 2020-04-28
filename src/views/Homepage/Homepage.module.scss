@@ -1,3 +1,55 @@
 .mainContainer {
-  background-color: red;
+  //height: 3.75rem;
+  display: flex;
+  height: 60px;
+  background: #17191D 0 0 no-repeat padding-box;
+  opacity: 0.9;
+  color: #FFFFFF;
+  align-items: center;
+  //font-size: 1.5rem;
+  //font-family: OswaldSemiBold;
+  //font-family: 'Oswald', sans-serif;
+  //font: Medium 24px/36px Oswald;
+  font-family: Oswald;
+  font-size: 1.5rem;
+
+  .userStatus {
+    font-family: Oswald;
+    font-size: 1.5rem;
+    height: 2.25rem;
+    //font: Medium 24px/36px Oswald;
+    font-weight: lighter;
+
+    .userStatusAmount {
+      font-weight: bold;
+    }
+  }
+
+  .buttonsContainer {
+    display: flex;
+
+    .firstButton {
+      //transform: matrix(-1, 0, 0, -1, 0, 0);
+      background: transparent linear-gradient(96deg, #6B0172 0,#4181FF 100%) 0 0 no-repeat padding-box;
+    }
+
+    .rhombus {
+      margin: 0.625rem 0.2rem;
+      width: 20rem;
+      font-weight: normal;
+      transform: skewX(45deg);
+      background: transparent linear-gradient(96deg, #4181FF 0, #6B0172 100%) 0 0 no-repeat padding-box;
+    }
+
+    .rhombusChild {
+      //transform: matrix(-1, 0, 0, -1, 0, 0);
+      transform: skewX(-45deg);
+      height: 2.25rem;
+      margin: 0.5rem 0;
+    }
+  }
+}
+
+.bubum {
+
 }
