@@ -9,9 +9,13 @@
   font-size: 1.5rem;
 
   .userStatus {
+    display: flex;
+    justify-content: space-around;
     font-size: 1.5rem;
     height: 2.25rem;
     font-weight: lighter;
+    width: 10rem;
+    margin: 1rem;
 
     .userStatusAmount {
       font-weight: bold;
@@ -20,33 +24,43 @@
 
   .buttonsContainer {
     $marginTop: 0.5rem;
-    $widthTriangle: 1.625rem;
+    $widthTriangle: 1.2rem;
     $heightTriangle: 3.25rem;
 
     display: flex;
 
-    div:first-child {
+    .rhombus_1 {
+      box-sizing: border-box;
+      font-weight: normal;
+      display: flex;
+      align-items: center;
       background: transparent linear-gradient(96deg, #6B0172 0, #4181FF 100%) 0 0 no-repeat padding-box;
+      margin: $marginTop 0.5rem;
 
-      &:before {
-        border-top: $heightTriangle solid #6B0172;
-      }
 
       &:after {
+        content: "";
+        position: relative;
+        right: -$widthTriangle;
+        width: 0;
+        height: 0;
         border-bottom: $heightTriangle solid #4181FF;
+        border-right: $widthTriangle solid transparent;
+      }
+
+      .iconContainer {
+        padding: 0 1rem;
       }
     }
 
-    .rhombus {
 
-
+    .rhombus_2 {
       box-sizing: border-box;
       font-weight: normal;
       display: flex;
       align-items: center;
       background: transparent linear-gradient(96deg, #4181FF 0, #6B0172 100%) 0 0 no-repeat padding-box;
-      margin: $marginTop 2rem;
-
+      margin: $marginTop 0 $marginTop 0.9rem;
 
       &:before {
         content: "";
@@ -58,20 +72,48 @@
         border-left: $widthTriangle solid transparent;
       }
 
+      .iconContainer {
+        padding: 0 1rem;
+      }
+
+      .iconContainerFORTUNE_COOKIE {
+        position: relative;
+        left: -1.5rem;
+      }
+
+      .iconContainerFORTUNE_COOKIE_2 {
+        padding: 0 4rem 0 3rem;
+      }
+    }
+
+    .rhombus_3 {
+      //box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      background: #7F5F12;;
+      margin: $marginTop 0;
+      padding: 0 1rem;
+
+
       &:after {
         content: "";
         position: relative;
-        right: -$widthTriangle;
+        right: 0;
         width: 0;
         height: 0;
-        border-bottom: $heightTriangle solid #6B0172;
+        border-bottom: $heightTriangle solid #4181FF;
         border-right: $widthTriangle solid transparent;
+      }
+
+      .text_1 {
+        font-weight: lighter;
       }
 
       .iconContainer {
         padding: 0 1rem;
       }
     }
+
   }
 }
 
