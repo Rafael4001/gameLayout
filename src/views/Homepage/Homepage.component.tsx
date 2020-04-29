@@ -57,11 +57,11 @@ const Homepage = () => {
         <div className={styles.rhombus_3}>
           <span className={styles.text_1}>BEST DROP: </span>
           <span>SAFARI MESH</span>
-          <img
-            src={GUN_1}
-            alt={"HAPPY_CARE"}
-            className={styles.iconContainerFORTUNE_COOKIE_2}
-          />
+          {/*<img*/}
+          {/*  src={GUN_1}*/}
+          {/*  alt={"HAPPY_CARE"}*/}
+          {/*  className={styles.iconContainerFORTUNE_COOKIE_2}*/}
+          {/*/>*/}
         </div>
 
       </div>
