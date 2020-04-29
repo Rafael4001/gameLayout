@@ -1,23 +1,16 @@
 .mainContainer {
-  //height: 3.75rem;
   display: flex;
   height: 60px;
   background: #17191D 0 0 no-repeat padding-box;
   opacity: 0.9;
   color: #FFFFFF;
   align-items: center;
-  //font-size: 1.5rem;
-  //font-family: OswaldSemiBold;
-  //font-family: 'Oswald', sans-serif;
-  //font: Medium 24px/36px Oswald;
   font-family: Oswald;
   font-size: 1.5rem;
 
   .userStatus {
-    font-family: Oswald;
     font-size: 1.5rem;
     height: 2.25rem;
-    //font: Medium 24px/36px Oswald;
     font-weight: lighter;
 
     .userStatusAmount {
@@ -26,30 +19,59 @@
   }
 
   .buttonsContainer {
+    $marginTop: 0.5rem;
+    $widthTriangle: 1.625rem;
+    $heightTriangle: 3.25rem;
+
     display: flex;
 
-    .firstButton {
-      //transform: matrix(-1, 0, 0, -1, 0, 0);
-      background: transparent linear-gradient(96deg, #6B0172 0,#4181FF 100%) 0 0 no-repeat padding-box;
+    div:first-child {
+      background: transparent linear-gradient(96deg, #6B0172 0, #4181FF 100%) 0 0 no-repeat padding-box;
+
+      &:before {
+        border-top: $heightTriangle solid #6B0172;
+      }
+
+      &:after {
+        border-bottom: $heightTriangle solid #4181FF;
+      }
     }
 
     .rhombus {
-      margin: 0.625rem 0.2rem;
-      width: 20rem;
-      font-weight: normal;
-      transform: skewX(45deg);
-      background: transparent linear-gradient(96deg, #4181FF 0, #6B0172 100%) 0 0 no-repeat padding-box;
-    }
 
-    .rhombusChild {
-      //transform: matrix(-1, 0, 0, -1, 0, 0);
-      transform: skewX(-45deg);
-      height: 2.25rem;
-      margin: 0.5rem 0;
+
+      box-sizing: border-box;
+      font-weight: normal;
+      display: flex;
+      align-items: center;
+      background: transparent linear-gradient(96deg, #4181FF 0, #6B0172 100%) 0 0 no-repeat padding-box;
+      margin: $marginTop 2rem;
+
+
+      &:before {
+        content: "";
+        position: relative;
+        right: $widthTriangle;
+        width: 0;
+        height: 0;
+        border-top: $heightTriangle solid #4181FF;
+        border-left: $widthTriangle solid transparent;
+      }
+
+      &:after {
+        content: "";
+        position: relative;
+        right: -$widthTriangle;
+        width: 0;
+        height: 0;
+        border-bottom: $heightTriangle solid #6B0172;
+        border-right: $widthTriangle solid transparent;
+      }
+
+      .iconContainer {
+        padding: 0 1rem;
+      }
     }
   }
 }
 
-.bubum {
-
-}
