@@ -1,0 +1,70 @@
+.mainContainer {
+  background: transparent linear-gradient(91deg, #242F40 0%, #33486B 16%, #092757 33%, #3E2B5A 51%, #335347 77%, #07090D 100%) 0 0 no-repeat padding-box;
+  font-family: Oswald;
+  display: flex;
+  justify-content: flex-end;
+}
+
+$screwX: 12deg;
+
+@mixin menuItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5.625rem;
+  margin: 1rem 0.125rem;
+  color: #FFF;
+  flex-grow: 0.05;
+  transform: skew($screwX);
+  position: relative;
+  right: -20px;
+
+  .iconContainer {
+    margin: 0 1rem
+  }
+}
+
+
+.screwX {
+  transform: skew(-$screwX);
+  display: flex;
+  align-items: center;
+}
+
+.homepage {
+  @include menuItem;
+  background: transparent linear-gradient(110deg, #0B2246 0%, #173058 100%) 0% 0% no-repeat padding-box;
+}
+
+.charge {
+  @include menuItem;
+  background: transparent linear-gradient(110deg, #39126B 0%, #173058 100%) 0% 0% no-repeat padding-box;
+}
+
+.earn {
+  @include menuItem;
+  background: transparent linear-gradient(110deg, #39126B 0%, #105477 100%) 0% 0% no-repeat padding-box;
+}
+
+.withdrawItem {
+  @include menuItem;
+  background: transparent linear-gradient(110deg, #000000 0%, #105477 100%) 0% 0% no-repeat padding-box;
+}
+
+
+.vipDistrictItem {
+  @include menuItem;
+  //background: transparent linear-gradient(103deg, rgba(11,34,70,0.3) 0%, rgba(23,48,88,0.3) 100%) 0 0 no-repeat padding-box ;
+  background: transparent linear-gradient(111deg, #000000 0%, #0A2A3A 100%) 0 0 no-repeat padding-box;
+}
+
+.loginItem {
+  @include menuItem;
+  background: transparent linear-gradient(103deg, #0B2246 0%, #173058 100%) 0 0 no-repeat padding-box;
+  font-size: 1rem;
+
+  span {
+    width: 10rem;
+  }
+}
+

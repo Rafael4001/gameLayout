@@ -1,7 +1,6 @@
 import React from 'react';
-// import classNames from 'classnames';
 
-import styles from './Homepage.module.scss';
+import styles from './MenuBar.module.scss';
 
 import {
   HAPPY_CARE,
@@ -10,11 +9,11 @@ import {
   USER_AVATAR,
   GUN_1,
   SUPPORT_ICON,
-} from '../../constants'
+} from '../../../constants'
 
 const VAR_1 = 756;
 
-const Homepage = () => {
+const MenuBar = () => {
 
   return (
     <div className={styles.mainContainer}>
@@ -22,7 +21,7 @@ const Homepage = () => {
       <div className={styles.userStatus}>
         <img
           src={USER_AVATAR}
-          alt={"HAPPY_CARE"}
+          alt={"USER_AVATAR"}
           className={styles.iconContainer}
         />
         <span> ONLINE:</span>
@@ -43,13 +42,13 @@ const Homepage = () => {
         <div className={styles.rhombus_2}>
           <img
             src={FORTUNE_COOKIE}
-            alt={"HAPPY_CARE"}
+            alt={"FORTUNE_COOKIE"}
             className={styles.iconContainerFORTUNE_COOKIE}
           />
           <div>LOTERIA W CIEMNO</div>
           <img
             src={FORTUNE_COOKIE_2}
-            alt={"HAPPY_CARE"}
+            alt={"FORTUNE_COOKIE_2"}
             className={styles.iconContainerFORTUNE_COOKIE_2}
           />
 
@@ -60,7 +59,7 @@ const Homepage = () => {
           <div>SAFARI MESH</div>
           <img
             src={GUN_1}
-            alt={"HAPPY_CARE"}
+            alt={"GUN_1"}
             className={styles.gunImage}
           />
         </div>
@@ -77,10 +76,9 @@ const Homepage = () => {
         />
         <span> SUPPORT</span>
       </div>
-
     </div>
   )
 }
 
 
-export default Homepage
+export default MenuBar

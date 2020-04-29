@@ -1,12 +1,14 @@
 import React from 'react';
 import './App.css';
 
-import HomepageComponent from './views/Homepage'
+import MenuBar from './views/Homepage/MenuBar'
+import MenuBarBellow from './views/Homepage/MenuBarBellow'
 
 function App() {
   return (
     <div>
-      <HomepageComponent/>
+      <MenuBar/>
+      <MenuBarBellow/>
     </div>
   );
 }
