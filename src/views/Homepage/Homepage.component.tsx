@@ -9,6 +9,7 @@ import {
   FORTUNE_COOKIE_2,
   USER_AVATAR,
   GUN_1,
+  SUPPORT_ICON,
 } from '../../constants'
 
 const VAR_1 = 756;
@@ -22,7 +23,7 @@ const Homepage = () => {
         <img
           src={USER_AVATAR}
           alt={"HAPPY_CARE"}
-          className={styles.iconContainerFORTUNE_COOKIE}
+          className={styles.iconContainer}
         />
         <span> ONLINE:</span>
         <span className={styles.userStatusAmount}>{VAR_1}</span>
@@ -55,17 +56,27 @@ const Homepage = () => {
         </div>
 
         <div className={styles.rhombus_3}>
-          <span className={styles.text_1}>BEST DROP: </span>
-          <span>SAFARI MESH</span>
-          {/*<img*/}
-          {/*  src={GUN_1}*/}
-          {/*  alt={"HAPPY_CARE"}*/}
-          {/*  className={styles.iconContainerFORTUNE_COOKIE_2}*/}
-          {/*/>*/}
+          <div className={styles.text_1}>BEST DROP:</div>
+          <div>SAFARI MESH</div>
+          <img
+            src={GUN_1}
+            alt={"HAPPY_CARE"}
+            className={styles.gunImage}
+          />
         </div>
 
+        <div className={styles.gunsdropContainer}>
+          DODAJ<span className={styles.gunsDropText}>"GUNSDROP"</span>DO SWOJEGO NICKU I ZGARNIJ +5% DO DROPA
+        </div>
       </div>
-
+      <div className={styles.supportContainer}>
+        <img
+          src={SUPPORT_ICON}
+          alt={"HAPPY_CARE"}
+          className={styles.iconContainer}
+        />
+        <span> SUPPORT</span>
+      </div>
 
     </div>
   )

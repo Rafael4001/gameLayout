@@ -1,5 +1,6 @@
 .mainContainer {
   display: flex;
+  justify-content: space-around;
   height: 60px;
   background: #17191D 0 0 no-repeat padding-box;
   opacity: 0.9;
@@ -9,8 +10,9 @@
   font-size: 1.5rem;
 
   .userStatus {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 3rem 5rem auto;
     font-size: 1.5rem;
     height: 2.25rem;
     font-weight: lighter;
@@ -19,6 +21,9 @@
 
     .userStatusAmount {
       font-weight: bold;
+    }
+
+    .iconContainer {
     }
   }
 
@@ -33,6 +38,7 @@
       box-sizing: border-box;
       font-weight: normal;
       display: flex;
+      //width: 21.125rem;
       align-items: center;
       background: transparent linear-gradient(96deg, #6B0172 0, #4181FF 100%) 0 0 no-repeat padding-box;
       margin: $marginTop 0.5rem;
@@ -87,33 +93,58 @@
     }
 
     .rhombus_3 {
-      //box-sizing: border-box;
+      box-sizing: border-box;
       display: flex;
       align-items: center;
       background: #7F5F12;;
       margin: $marginTop 0;
-      padding: 0 1rem;
-
 
       &:after {
         content: "";
         position: relative;
-        right: 0;
+        right: -$widthTriangle;
         width: 0;
         height: 0;
-        border-bottom: $heightTriangle solid #4181FF;
+        border-bottom: $heightTriangle solid #7F5F12;
         border-right: $widthTriangle solid transparent;
       }
 
       .text_1 {
         font-weight: lighter;
+        padding-left: 1rem;
       }
 
-      .iconContainer {
-        padding: 0 1rem;
+      .gunImage {
       }
     }
 
+    .gunsdropContainer {
+      display: flex;
+      align-items: center;
+      font-size: 1rem;
+      height: 3.25rem;
+      font-weight: lighter;
+      margin: 0.5rem $widthTriangle;
+
+      .gunsDropText {
+        color: #4181FF;
+        margin: 0.1875rem
+      }
+    }
+
+    .supportContainer {
+      display: grid;
+      align-items: center;
+      grid-template-columns: 2rem 5rem;
+      font-size: 1.5rem;
+      font-weight: normal;
+      height: 2.25rem;
+      width: 10rem;
+      margin: 1rem;
+
+      .iconContainer {
+      }
+    }
   }
 }
 
