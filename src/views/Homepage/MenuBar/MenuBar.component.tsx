@@ -9,6 +9,7 @@ import {
   USER_AVATAR,
   GUN_1,
   SUPPORT_ICON,
+  SOLDIER_1,
 } from '../../../constants'
 
 const VAR_1 = 756;
@@ -17,6 +18,14 @@ const MenuBar = () => {
 
   return (
     <div className={styles.mainContainer}>
+
+      <div>
+        <img
+          src={SOLDIER_1}
+          alt={"SOLDIER_1"}
+          className={styles.soldier}
+        />
+      </div>
 
       <div className={styles.userStatus}>
         <img

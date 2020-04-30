@@ -1,13 +1,20 @@
 .mainContainer {
   display: flex;
-  justify-content: space-around;
   height: 60px;
   background: #17191D 0 0 no-repeat padding-box;
-  opacity: 0.9;
   color: #FFFFFF;
   align-items: center;
   font-family: Oswald;
   font-size: 1.5rem;
+
+  .soldier {
+    position: absolute;
+    left: 48.5rem;
+    top: 0rem;
+    height: 3.75rem;
+    z-index: 100;
+  }
+
 
   .userStatus {
     display: grid;
@@ -66,7 +73,7 @@
       display: flex;
       align-items: center;
       background: transparent linear-gradient(96deg, #4181FF 0, #6B0172 100%) 0 0 no-repeat padding-box;
-      margin: $marginTop 0 $marginTop 0.9rem;
+      margin: $marginTop 0.9rem $marginTop 0.9rem;
 
       &:before {
         content: "";
@@ -76,6 +83,16 @@
         height: 0;
         border-top: $heightTriangle solid #4181FF;
         border-left: $widthTriangle solid transparent;
+      }
+
+      &:after {
+        content: "";
+        position: relative;
+        right: -$widthTriangle;
+        width: 0;
+        height: 0;
+        border-top: $heightTriangle solid #6B0172;
+        border-right: $widthTriangle solid transparent;
       }
 
       .iconContainer {
@@ -88,7 +105,7 @@
       }
 
       .iconContainerFORTUNE_COOKIE_2 {
-        padding: 0 4rem 0 3rem;
+        padding: 0 4rem 0 4.5rem;
       }
     }
 
@@ -97,7 +114,17 @@
       display: flex;
       align-items: center;
       background: #7F5F12;;
-      margin: $marginTop 0;
+      margin: $marginTop 0 $marginTop 0.5rem;
+
+      &:before {
+        content: "";
+        position: relative;
+        right: $widthTriangle;
+        width: 0;
+        height: 0;
+        border-left: $widthTriangle solid transparent;
+        border-bottom: $heightTriangle solid #7F5F12;
+      }
 
       &:after {
         content: "";
@@ -111,10 +138,10 @@
 
       .text_1 {
         font-weight: lighter;
-        padding-left: 1rem;
       }
 
       .gunImage {
+        width: 8rem;
       }
     }
 
