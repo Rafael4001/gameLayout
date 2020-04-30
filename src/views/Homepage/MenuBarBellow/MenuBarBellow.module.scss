@@ -15,10 +15,10 @@ $screwX: 12deg;
   height: 5.625rem;
   margin: 0 0.125rem;
   color: #FFF;
-  flex-grow: 0.05;
+  //flex-grow: 0.05;
   transform: skew($screwX);
   position: relative;
-  right: -1.25rem;
+  //right: -1.25rem;
   box-shadow: 0px 0px 0.625rem #FFFFFF29;
 
   .iconContainer {
@@ -31,6 +31,7 @@ $screwX: 12deg;
   transform: skew(-$screwX);
   display: flex;
   align-items: center;
+  margin: 0 1.5rem;
 }
 
 .homepage {
@@ -75,45 +76,21 @@ $screwX: 12deg;
   transform: skew($screwX);
   display: flex;
   flex-direction: column;
-  //align-content: space-between;
+  justify-content: space-between;
 
 }
 
 .facebookContainer {
   display: flex;
   flex-direction: column;
-  //align-items: center;
   justify-content: center;
   margin: 0 0.125rem;
   color: #FFF;
-  flex-grow: 0.05;
   position: relative;
-  right: -1.25rem;
   box-shadow: 0px 0px 0.625rem #FFFFFF29;
-  background-color: red;
-  //height: 2.625rem;
+  background-color: #122A50;
+  height: 2.625rem;
 
-
-  .iconContainer {
-    margin: 0 1rem;
-    transform: skew(-$screwX);
-  }
-}
-
-.facebookContainer_2 {
-  display: flex;
-  flex-direction: column;
-  //align-items: center;
-  justify-content: center;
-  margin: 0 0.125rem;
-  color: #FFF;
-  flex-grow: 0.05;
-  position: relative;
-  right: -1.25rem;
-  box-shadow: 0px 0px 0.625rem #FFFFFF29;
-  background-color: red;
-  //height: 2.625rem;
-  align-self: flex-end;
 
   .iconContainer {
     margin: 0 1rem;

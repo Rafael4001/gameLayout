@@ -55,7 +55,7 @@ const MenuBarBellow = () => {
           />
         </div>
 
-        <div className={styles.facebookContainer_2}>
+        <div className={styles.facebookContainer}>
           <div className={styles.facebookItem}>
             <img
               src={INSTAGRAM_ICON}
