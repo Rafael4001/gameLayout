@@ -13,6 +13,7 @@ import _chargeBattery from './images/_chargeBattery.svg'
 import facebookIcon from './images/facebook-2.svg'
 import instagramGlyph from './images/instagramGlyph.svg'
 import soldier_1 from './images/soldier_1.png'
+// import background from './images/background.png'
 
 export const HAPPY_CARE = happyCare;
 export const FORTUNE_COOKIE = fortuneCookie;
@@ -29,3 +30,4 @@ export const CHARGE_BATTERY = _chargeBattery;
 export const FACEBOOK_ICON = facebookIcon;
 export const INSTAGRAM_ICON = instagramGlyph;
 export const SOLDIER_1 = soldier_1;
+// export const BACKGROUND = background;

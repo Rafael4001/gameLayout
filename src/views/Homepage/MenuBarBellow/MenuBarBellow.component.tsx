@@ -46,58 +46,60 @@ const MenuBarBellow = () => {
 
   return (
     <div className={styles.mainContainer}>
-      <div className={styles.socialMediaContainer}>
-        <div className={styles.facebookContainer}>
-          <img
-            src={FACEBOOK_ICON}
-            alt={"FACEBOOK_ICON"}
-            className={styles.iconContainer}
-          />
-        </div>
+     <div className={styles.itemsContainer}>
+       <div className={styles.socialMediaContainer}>
+         <div className={styles.facebookContainer}>
+           <img
+             src={FACEBOOK_ICON}
+             alt={"FACEBOOK_ICON"}
+             className={styles.iconContainer}
+           />
+         </div>
 
-        <div className={styles.facebookContainer}>
-          <div className={styles.facebookItem}>
-            <img
-              src={INSTAGRAM_ICON}
-              alt={"INSTAGRAM_ICON"}
-              className={styles.iconContainer}
-            />
-          </div>
-        </div>
+         <div className={styles.facebookContainer}>
+           <div className={styles.facebookItem}>
+             <img
+               src={INSTAGRAM_ICON}
+               alt={"INSTAGRAM_ICON"}
+               className={styles.iconContainer}
+             />
+           </div>
+         </div>
 
-      </div>
+       </div>
 
-      {
-        menuItem.map((item) => (
-          <div className={item.classSpecial}>
-            <div className={styles.screwX}>
-              <img
-                src={item.iconName}
-                alt={`${item.iconName}`}
-                className={styles.iconContainer}
-              />
-              <span>{item.text}</span>
-            </div>
-          </div>
-        ))
-      }
+       {
+         menuItem.map((item) => (
+           <div className={item.classSpecial}>
+             <div className={styles.screwX}>
+               <img
+                 src={item.iconName}
+                 alt={`${item.iconName}`}
+                 className={styles.iconContainer}
+               />
+               <span>{item.text}</span>
+             </div>
+           </div>
+         ))
+       }
 
 
-      <div className={styles.loginItem}>
-        <div className={styles.screwX}>
-          <img
-            src={LOGIN_ICON}
-            alt={"LOGIN_ICON"}
-            className={styles.iconContainer}
-          />
-          <span>ZALOGUJ PRZEZ SYSTEM</span>
-          <img
-            src={STREAM_ICON}
-            alt={"STREAM_ICON"}
-            className={styles.iconContainer}
-          />
-        </div>
-      </div>
+       <div className={styles.loginItem}>
+         <div className={styles.screwX}>
+           <img
+             src={LOGIN_ICON}
+             alt={"LOGIN_ICON"}
+             className={styles.iconContainer}
+           />
+           <span>ZALOGUJ PRZEZ SYSTEM</span>
+           <img
+             src={STREAM_ICON}
+             alt={"STREAM_ICON"}
+             className={styles.iconContainer}
+           />
+         </div>
+       </div>
+     </div>
     </div>
   )
 }
