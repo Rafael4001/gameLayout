@@ -1,0 +1,98 @@
+$screwX: 12deg;
+
+.mainContainer {
+  background: transparent linear-gradient(91deg, rgba(36, 47, 64, 0.9) 0%, rgba(51, 72, 107, 0.9) 16%, rgba(9, 39, 87, 0.9) 33%, rgba(62, 43, 90, 0.9) 51%, rgba(51, 83, 71, 0.9) 77%, rgba(7, 9, 13, 0.9) 100%) 0 0 no-repeat padding-box;
+  font-family: Oswald;
+  color: #FFF;
+  position: relative;
+  left: -1rem;
+  width: 102%;
+  font-size: 0.875rem;
+}
+
+.itemsContainer {
+  display: flex;
+}
+
+@mixin menuItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5.625rem;
+  margin: 0 0.125rem;
+  width: 20%;
+  transform: skew(-$screwX);
+  position: relative;
+  box-shadow: 0px 0px 0.625rem #FFFFFF29;
+  //background: transparent linear-gradient(74deg, rgba(65, 129, 255, 0.5) 0%, rgba(55, 143, 227, 0.5) 100%);
+  //background: transparent linear-gradient(74deg, #4181FF 0%, #00378FE3 100%) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(74deg, rgba(65, 129, 255, 0.2) 0%, rgba(rgb(0, 55, 143), 0.2) 100%);
+
+}
+
+.iconContainer {
+  width: 7rem;
+}
+
+.screwX {
+  transform: skew($screwX);
+  display: flex;
+  align-items: center;
+}
+
+.homepage {
+  @include menuItem;
+}
+
+.openChests {
+  @include menuItem;
+  background: transparent linear-gradient(70deg, rgba(0, 55, 143, 0.9) 0%, rgba(213, 1, 228, 0.9) 100%) 0% 0% no-repeat padding-box;
+
+  .insideContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .scoreContainer {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.6875rem;
+    font-weight: 600;
+  }
+
+  .lastDropContainer {
+    display: flex;
+    //flex-direction: row;
+    //font-size: 1.6875rem;
+  }
+
+  .iconContainer {
+    width: 1.5rem;
+    margin: 0 1rem 0 0;
+  }
+}
+
+$opactiyValue: 0.9;
+
+.mechaIndustries {
+  @include menuItem;
+  background: transparent linear-gradient(74deg, rgba(65, 129, 255, 0.2) 0%, rgba(0, 55, 143, 0.2) 100%);
+}
+
+.image_2_Styles {
+  @include menuItem;
+  background: transparent linear-gradient(74deg, rgba(65, 129, 255, 0.2) 0%, rgba(rgb(0, 55, 143), 0.2) 100%);
+}
+
+.image_3_Styles {
+  @include menuItem;
+  background: transparent linear-gradient(74deg, rgba(228, 161, 1, 0.5) 0%, rgba(204, 164, 59, 0.2) 100%);
+}
+
+.goldStarImage{
+  width: 1.5625rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: skew($screwX);
+}
