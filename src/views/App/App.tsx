@@ -4,6 +4,7 @@ import './App.css';
 import MenuBar from '../Homepage/MenuBar'
 import MenuBarBellow from '../Homepage/MenuBarBellow'
 import Weapons from '../Homepage/Weapons'
+import Slider from '../Homepage/Slider'
 
 import styles from './App.module.scss'
 
@@ -13,6 +14,7 @@ function App() {
       <MenuBar/>
       <MenuBarBellow/>
       <Weapons/>
+      <Slider/>
     </div>
   );
 }
