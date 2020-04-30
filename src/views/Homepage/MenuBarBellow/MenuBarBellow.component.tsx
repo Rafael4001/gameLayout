@@ -46,7 +46,24 @@ const MenuBarBellow = () => {
 
   return (
     <div className={styles.mainContainer}>
-      <div>
+      <div className={styles.socialMediaContainer}>
+        <div className={styles.facebookContainer}>
+          <img
+            src={FACEBOOK_ICON}
+            alt={"FACEBOOK_ICON"}
+            className={styles.iconContainer}
+          />
+        </div>
+
+        <div className={styles.facebookContainer_2}>
+          <div className={styles.facebookItem}>
+            <img
+              src={INSTAGRAM_ICON}
+              alt={"INSTAGRAM_ICON"}
+              className={styles.iconContainer}
+            />
+          </div>
+        </div>
 
       </div>
 
