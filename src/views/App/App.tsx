@@ -11,10 +11,12 @@ import styles from './App.module.scss'
 function App() {
   return (
     <div className={styles.mainContainer}>
-      <MenuBar/>
-      <MenuBarBellow/>
-      <Weapons/>
-      <Slider/>
+      <div className={styles.mainContainerFilter}>
+        <MenuBar/>
+        <MenuBarBellow/>
+        <Weapons/>
+        <Slider/>
+      </div>
     </div>
   );
 }

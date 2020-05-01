@@ -1,14 +1,14 @@
 $screwX: 12deg;
 
 .mainContainer {
-  background: transparent linear-gradient(91deg, rgba(36, 47, 64, 0.9) 0%, rgba(51, 72, 107, 0.9) 16%, rgba(9, 39, 87, 0.9) 33%, rgba(62, 43, 90, 0.9) 51%, rgba(51, 83, 71, 0.9) 77%, rgba(7, 9, 13, 0.9) 100%) 0 0 no-repeat padding-box;
+  background: none;
   font-family: Oswald;
   color: #FFF;
   position: relative;
   left: -1rem;
   width: 102%;
   font-size: 0.875rem;
-  padding: 0.5rem 0;
+  margin: 0.5rem 0;
 }
 
 .itemsContainer {
@@ -39,13 +39,9 @@ $screwX: 12deg;
   align-items: center;
 }
 
-.homepage {
-  @include menuItem;
-}
-
 .openChests {
   @include menuItem;
-  background: transparent linear-gradient(70deg, rgba(0, 55, 143, 0.9) 0%, rgba(213, 1, 228, 0.9) 100%) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(70deg, rgba(65, 129, 255, 0.55) 0%, rgba(213, 1, 228, 0.65) 100%) 0% 0% no-repeat padding-box;
 
   .insideContainer {
     display: flex;
@@ -73,12 +69,12 @@ $opactiyValue: 0.9;
 
 .mechaIndustries {
   @include menuItem;
-  background: transparent linear-gradient(74deg, rgba(65, 129, 255, 0.2) 0%, rgba(0, 55, 143, 0.2) 100%);
+  background: transparent linear-gradient(74deg, rgba(65, 129, 255, 0.55) 0%, rgba(0, 55, 143, 0.35) 100%);
 }
 
 .image_2_Styles {
   @include menuItem;
-  background: transparent linear-gradient(74deg, rgba(65, 129, 255, 0.2) 0%, rgba(rgb(0, 55, 143), 0.2) 100%);
+  background: transparent linear-gradient(74deg, rgba(65, 129, 255, 0.55) 0%, rgba(rgb(0, 55, 143), 0.35) 100%);
 }
 
 .image_3_Styles {

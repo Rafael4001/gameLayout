@@ -48,8 +48,8 @@ const Slider = () => (
     <Carousel
       showStatus={false}
       showThumbs={false}
-    >
-      {getSlide_1()}
+    >{getSlide_1()}
+
       {getSlide_2()}
     </Carousel>
   </div>

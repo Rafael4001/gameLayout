@@ -36,79 +36,90 @@ const menuItem = [
   },
   {
     text: 'FRANKLIN',
-    classSpecial: styles.homepage,
+    classSpecial: styles.mechaIndustries,
     iconName: IMAGE_4,
     isStar: false,
   },
   {
     text: 'MECHA INDUSTRIES',
-    classSpecial: styles.homepage,
+    classSpecial: styles.mechaIndustries,
     iconName: IMAGE_5,
     isStar: false,
   },
   {
     text: 'FADE',
-    classSpecial: styles.homepage,
+    classSpecial: styles.mechaIndustries,
     iconName: IMAGE_6,
     isStar: false,
   },
 ]
 
+const SCORE_CHAINS = 25019;
+
+
+const getOpenChains = () => (
+  <div className={styles.openChests}>
+    <div className={styles.screwX}>
+      <div className={styles.insideContainer}>
+        <div>OTWORZONE SKRZYNKI</div>
+
+        <div className={styles.scoreContainer}>
+          <img
+            src={BOX}
+            alt={`BOX`}
+            className={styles.iconContainer}
+          />
+          <div>{SCORE_CHAINS}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+)
+
+
+const getWeapens = () => (
+  menuItem.map((item) => (
+    <div className={item.classSpecial}>
+      {item.isStar &&
+      <img
+        src={GOLD_STAR}
+        alt={`GOLD_STAR`}
+        className={styles.goldStarImage}
+      />
+      }
+      <div className={styles.screwX}>
+        <span>{item.text}</span>
+        <img
+          src={item.iconName}
+          alt={`${item.iconName}`}
+          className={styles.iconContainer}
+        />
+      </div>
+    </div>
+  ))
+)
+
+
+const getLastDrop = () => (
+  <div className={styles.openChests}>
+    <div className={styles.screwX}>
+      <img
+        src={IMAGE_7}
+        alt={`IMAGE_7`}
+        className={styles.iconContainer}
+      />
+      <div>OSTATNI DROP</div>
+    </div>
+  </div>
+)
 const Weapons = () => {
 
   return (
     <div className={styles.mainContainer}>
       <div className={styles.itemsContainer}>
-        <div className={styles.openChests}>
-          <div className={styles.screwX}>
-            <div className={styles.insideContainer}>
-              <div>OTWORZONE SKRZYNKI</div>
-
-              <div className={styles.scoreContainer}>
-                <img
-                  src={BOX}
-                  alt={`BOX`}
-                  className={styles.iconContainer}
-                />
-                <div>25 019</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {
-          menuItem.map((item) => (
-            <div className={item.classSpecial}>
-              {item.isStar &&
-              <img
-                src={GOLD_STAR}
-                alt={`GOLD_STAR`}
-                className={styles.goldStarImage}
-              />
-              }
-              <div className={styles.screwX}>
-                <span>{item.text}</span>
-                <img
-                  src={item.iconName}
-                  alt={`${item.iconName}`}
-                  className={styles.iconContainer}
-                />
-              </div>
-            </div>
-          ))
-        }
-
-        <div className={styles.openChests}>
-          <div className={styles.screwX}>
-            <img
-              src={IMAGE_7}
-              alt={`IMAGE_7`}
-              className={styles.iconContainer}
-            />
-            <div>OSTATNI DROP</div>
-          </div>
-        </div>
-
+        {getOpenChains()}
+        {getWeapens()}
+        {getLastDrop()}
       </div>
     </div>
   )
