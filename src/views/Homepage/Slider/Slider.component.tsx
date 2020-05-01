@@ -40,26 +40,19 @@ const getSlide_1 = () => (
 )
 
 const getSlide_2 = () => (
-  <div>
-    <img src={WORLD} className={styles.image}/>
-  </div>
+  <img src={WORLD} className={styles.image}/>
 )
 
-const Slider = () => {
-
-  return (
-    <div className={styles.mainContainer}>
-      <Carousel
-        showStatus={false}
-        showThumbs={false}
-      >
-        {getSlide_1()}
-        {getSlide_2()}
-
-      </Carousel>
-    </div>
-  )
-}
-
+const Slider = () => (
+  <div className={styles.mainContainer}>
+    <Carousel
+      showStatus={false}
+      showThumbs={false}
+    >
+      {getSlide_1()}
+      {getSlide_2()}
+    </Carousel>
+  </div>
+)
 
 export default Slider
