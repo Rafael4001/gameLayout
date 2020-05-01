@@ -4,9 +4,46 @@ import { Carousel } from 'react-responsive-carousel';
 
 import ButtonRhombus from '../../../components/ButtonRhombus'
 
-import { WORLD } from '../../../constants'
+import { WORLD, SOLDIER_2 } from '../../../constants'
 
 import styles from './Slider.module.scss';
+
+const getSlide_1 = () => (
+  <div>
+    <img src={WORLD}/>
+
+    <div className={styles.contentContainer}>
+      <div className={styles.textContainer}>
+        <div className={styles.firstLine}>
+          <span className={styles.chanceText}>+30%</span>
+          <span className={styles.middleText}>SZANS W LOTERII</span>
+          <span className={styles.darkText}>W CIEMNO</span>
+        </div>
+        <div className={styles.secondLine}>
+          <span>DO KONCA TEGO TYGODNIA</span>
+        </div>
+      </div>
+
+      <div className={styles.buttonContainer}>
+        <ButtonRhombus
+          text={"ZAGRAJ"}
+          onClick={() => alert('Halo')}
+          className={styles.buttonCustomClass}
+        />
+      </div>
+
+      <div className={styles.soldierContainer}>
+        <img src={SOLDIER_2} alt={"SOLDIER_2"} className={styles.soldier}/>
+      </div>
+    </div>
+  </div>
+)
+
+const getSlide_2 = () => (
+  <div>
+    <img src={WORLD} className={styles.image}/>
+  </div>
+)
 
 const Slider = () => {
 
@@ -16,33 +53,9 @@ const Slider = () => {
         showStatus={false}
         showThumbs={false}
       >
-        <div>
-          <img src={WORLD} className={styles.image}/>
-          <div className={styles.contentContainer}>
-            <div className={styles.textContainer}>
-              <div className={styles.firstLine}>
-                <span className={styles.chanceText}>+30%</span>
-                <span className={styles.middleText}>SZANS W LOTERII</span>
-                <span className={styles.darkText}>W CIEMNO</span>
-              </div>
-              <div className={styles.secondLine}>
-                <span>DO KONCA TEGO TYGODNIA</span>
-              </div>
-            </div>
-            <div className={styles.buttonContainer}>
-              <ButtonRhombus
-                text={"ZAGRAJ"}
-                onClick={()=>alert('Halo')}
-                className={styles.buttonCustomClass}
-              />
-            </div>
-          </div>
-        </div>
+        {getSlide_1()}
+        {getSlide_2()}
 
-        <div>
-          <img src={WORLD} className={styles.image}/>
-          {/*<p className="legend">Legend 1</p>*/}
-        </div>
       </Carousel>
     </div>
   )

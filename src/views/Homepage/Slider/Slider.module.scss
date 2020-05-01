@@ -2,7 +2,13 @@
   background: transparent linear-gradient(91deg, rgba(36, 47, 64, 0.9) 0%, rgba(51, 72, 107, 0.9) 16%, rgba(9, 39, 87, 0.9) 33%, rgba(62, 43, 90, 0.9) 51%, rgba(51, 83, 71, 0.9) 77%, rgba(7, 9, 13, 0.9) 100%) 0 0 no-repeat padding-box;
 }
 
+.aaaaaa {
+  background-color: red;
+  //opacity: 0.2;
+}
+
 .contentContainer {
+  background: transparent linear-gradient(74deg, rgba(65, 129, 255, 0.4) 50%,rgba(296, 1, 228, 0.3) 55%) 0 0;
   display: flex;
   color: #FFF;
   position: absolute;
@@ -48,11 +54,21 @@
   display: flex;
   height: 100%;
   align-items: center;
-  margin-left: 7.4375rem;
+  margin: 0 7.4375rem;
 }
 
 .buttonCustomClass {
   height: 5.6875rem;
   background: transparent linear-gradient(74deg, rgba(296, 1, 228, 0.8) 0%, rgba(65, 129, 255, 0.8) 100%) 0 0;
   box-shadow: 0px 0px 0.625rem #000000;
+}
+
+.soldierContainer {
+  height: 100%;
+  width: 21.375rem;
+  display: flex;
+}
+
+.soldier {
+  height: 100%;
 }

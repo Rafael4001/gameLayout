@@ -8,6 +8,7 @@ $screwX: 12deg;
   left: -1rem;
   width: 102%;
   font-size: 0.875rem;
+  padding: 0.5rem 0;
 }
 
 .itemsContainer {
@@ -85,7 +86,7 @@ $opactiyValue: 0.9;
   background: transparent linear-gradient(74deg, rgba(228, 161, 1, 0.5) 0%, rgba(204, 164, 59, 0.2) 100%);
 }
 
-.goldStarImage{
+.goldStarImage {
   width: 1.5625rem;
   position: absolute;
   top: 0;

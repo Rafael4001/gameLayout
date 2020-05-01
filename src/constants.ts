@@ -13,6 +13,7 @@ import _chargeBattery from './images/_chargeBattery.svg'
 import facebookIcon from './images/facebook-2.svg'
 import instagramGlyph from './images/instagramGlyph.svg'
 import soldier_1 from './images/soldier_1.png'
+import soldier_2 from './images/soldier_2.png'
 import image_1 from './images/image_1.png'
 import image_2 from './images/image_2.png'
 import image_3 from './images/image_3.png'
@@ -39,6 +40,7 @@ export const CHARGE_BATTERY = _chargeBattery;
 export const FACEBOOK_ICON = facebookIcon;
 export const INSTAGRAM_ICON = instagramGlyph;
 export const SOLDIER_1 = soldier_1;
+export const SOLDIER_2 = soldier_2;
 export const IMAGE_1 = image_1;
 export const IMAGE_2 = image_2;
 export const IMAGE_3 = image_3;
