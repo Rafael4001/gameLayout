@@ -22,6 +22,7 @@ import image_4 from './images/image_4.png'
 import image_5 from './images/image_5.png'
 import image_6 from './images/image_6.png'
 import image_7 from './images/image_7.svg'
+import world from './images/world.jpeg'
 
 export const HAPPY_CARE = happyCare;
 export const FORTUNE_COOKIE = fortuneCookie;
@@ -47,3 +48,4 @@ export const IMAGE_6 = image_6;
 export const IMAGE_7 = image_7;
 export const GOLD_STAR = Gold_Star;
 export const BOX = box;
+export const WORLD = world;
